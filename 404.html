@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | Jobbyist Nigeria</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* Custom Green based on Nigeria Flag */
+        .bg-nigeria { background-color: #008751; }
+        .text-nigeria { color: #008751; }
+        .border-nigeria { border-color: #008751; }
+        .btn-hover:hover { background-color: #006e42; }
+        
+        /* Animation for 404 number */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        .float-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
+
+    <main class="flex-grow flex flex-col items-center justify-center px-4 py-12 sm:px-6 lg:px-8">
+        
+        <div class="max-w-3xl w-full space-y-8 text-center bg-white p-10 rounded-2xl shadow-xl">
+            
+            <!-- 404 Error Number -->
+            <div class="float-animation">
+                <h1 class="text-9xl font-extrabold text-nigeria mb-2">
+                    404
+                </h1>
+            </div>
+
+            <!-- Error Message -->
+            <div>
+                <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
+                    Page Not Found
+                </h2>
+                <p class="text-lg text-gray-600 mb-6">
+                    Oops! The page you're looking for doesn't exist or has been moved.
+                </p>
+            </div>
+
+            <!-- Info Box -->
+            <div class="bg-green-50 border-l-4 border-nigeria p-4 text-left rounded-md shadow-sm">
+                <div class="flex">
+                    <div class="flex-shrink-0">
+                        <i class="fas fa-lightbulb text-nigeria text-xl"></i>
+                    </div>
+                    <div class="ml-3">
+                        <p class="text-sm text-gray-700">
+                            <strong>Did you know?</strong> Jobbyist is launching in Nigeria in Q2 2026 (April - June). Join our waiting list to be among the first to know!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+                <a href="/" class="group relative flex justify-center py-3 px-6 border border-transparent text-sm font-bold rounded-lg text-white bg-nigeria btn-hover focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition-colors duration-200">
+                    <i class="fas fa-home mr-2"></i>
+                    Go to Home Page
+                </a>
+                <a href="mailto:support@jobbyist.africa" class="group relative flex justify-center py-3 px-6 border-2 border-nigeria text-sm font-bold rounded-lg text-nigeria hover:bg-green-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition-colors duration-200">
+                    <i class="fas fa-envelope mr-2"></i>
+                    Contact Support
+                </a>
+            </div>
+
+            <!-- Additional Help -->
+            <div class="mt-8 pt-6 border-t border-gray-200">
+                <p class="text-sm text-gray-500">
+                    If you believe this is an error, please contact us at 
+                    <a href="mailto:support@jobbyist.africa" class="text-nigeria hover:underline font-semibold">support@jobbyist.africa</a>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
+            
+            <div class="flex space-x-6 mb-4">
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                    <span class="sr-only">Facebook</span>
+                    <i class="fab fa-facebook fa-xl"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                    <span class="sr-only">LinkedIn</span>
+                    <i class="fab fa-linkedin fa-xl"></i>
+                </a>
+            </div>
+
+            <div class="text-center">
+                <p class="text-xs text-gray-500">&copy; 2026 Jobbyist. All rights reserved.</p>
+                <p class="text-xs text-gray-600 mt-1 font-semibold">A division of Gravitas Industries.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
